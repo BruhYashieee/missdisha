@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px;
+            background: #333;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 3px 8px 8px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .left,
+        .right {
+            padding: 40px;
+            height: 100%;
+        }
+
+        .left {
+            width: 40%;
+        }
+
+        .right {
+            width: 60%;
+        }
+
+        .profileContainer {
+            width: 100%;
+            height: 100%;
+            background-color: wheat;
+            border-radius: 20px;
+            box-shadow: 3px 8px 8px 4px rgba(0, 0, 0, 0.4);
+            animation: drop 3s forwards;
+            transition: all 0.4s;
+            position: relative;
+            top: -400px;
+        }
+
+        @keyframes drop {
+            from {
+                top: -400px;
+                filter: blur(8px);
+            }
+
+            to {
+                top: 0;
+                filter: blur(0px);
+            }
+        }
+        .profileHolder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .profileHolder img {
+            position: relative;
+            top: 50px;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            box-shadow: 3px 8px 8px 4px rgba(0, 0, 0, 0.4);
+        }
+        .profileHolder h1 {
+            font-size: 35px;
+            text-align: center;
+            margin: 100px 20px 20px 20px;
+        }
+        .profileHolder h6 {
+            font-size: 27px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .noteContainer {
+            width: 100%;
+            height: 100%;
+            background: tan;
+            border-radius: 20px;
+            box-shadow: 3px 8px 8px 4px rgba(0, 0, 0, 0.4);
+            transition: all 0.4s;
+            animation: swipe 4s forwards;
+            position: relative;
+            right: -600px;
+            padding: 40px;
+        }
+
+        @keyframes swipe {
+            from {
+                right: -600px;
+                filter: blur(8px);
+            }
+
+            to {
+                right: 0;
+                filter: blur(0px);
+            }
+        }
+
+        .noteContainer h1 {
+            text-align: center;
+            font-size: 50px;
+            margin: 15px 0;
+        }
+
+        hr {
+            margin: 10px 40px;
+            height: 1px;
+        }
+        .hr {
+            background: darkblue;
+            margin: 10px 40px;
+            height: 1px;
+            position: relative;
+            top: 100px;
+        }
+
+        .noteContainer .small {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .noteContainer p {
+            font-size: 20px;
+            margin: 30px;
+        }
+        .noteContainer ul{
+            margin: 0 0px 0 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="profileContainer">
+                <div class="profileHolder">
+                    <img src="../images/boy.png" alt="bruh">
+                    <h1>"Yash"</h1>
+                    <hr class="hr">
+                    <h6>I am finance Student</h6>
+                    <h6>Just obsessed with Coding</h6>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="noteContainer">
+                <h1>Who Am I? What I Do?</h1>
+                <p class="small">Contains details about me? what things i know etc etc etc</p>
+                <hr>
+                <p>
+                    <strong>Hey There, <br>
+                        Firstly Thank you really very much that you still here and checked this page which doesnt
+                        actually related to this site theme! <br> <br>Secondly, this page is all about Me, <br> The list of languages which i know:-
+                        <ul>
+                            <li>MongoDB</li>
+                            <li>JavaScript</li>
+                            <li>Python(Data Analyst)</li>
+                            <li>Node.js</li>
+                            <li>SQL</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>React.js</li>
+                        </ul>
+                    </strong>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

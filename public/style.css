@@ -1,0 +1,696 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    user-select: none;
+}
+
+.home {
+    height: 100%;
+    width: 100%;
+}
+
+.section1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 150px;
+    background: url(images/5423439.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section1 .container {
+    height: 500px;
+    width: 400px;
+    background: url(images/5605216.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+    box-shadow: 4px 2px 4px 4px rgba(0, 0, 0, 0.4);
+    position: relative;
+    top: -100px;
+}
+
+.section1 img {
+    opacity: 0;
+    margin-bottom: 40px;
+    position: relative;
+    top: -100px;
+    width: 400px;
+    height: 500px;
+}
+
+.container h1 {
+    text-align: center;
+    margin: 10px 0 100px 0;
+    font-size: 50px;
+}
+
+.container h4 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    animation: flicker 1s linear infinite;
+}
+
+@keyframes flicker {
+    from {
+        opacity: 1;
+        font-size: 20px;
+    }
+
+    to {
+        opacity: 0.2;
+        font-size: 25px;
+    }
+}
+
+.section2 {
+    height: 100vh;
+    width: 100%;
+    padding: 0px 100px;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    top: 100px;
+}
+
+.container2 {
+    height: 90%;
+    width: 100%;
+    background-color: white;
+    margin: 30px 0px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 6px 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(255, 216, 220);
+    opacity: 0;
+}
+
+ul {
+    display: flex;
+    column-gap: 50px;
+    position: relative;
+    left: 380px;
+}
+
+li {
+    list-style: none;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.4s;
+}
+
+nav a:hover {
+    border-bottom: 1px solid black;
+    font-size: 34px;
+}
+
+.homeBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: url(images/5574886.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.left,
+.right {
+    width: 50%;
+    height: 100%;
+}
+
+.left {
+    opacity: 0;
+    position: relative;
+    left: -100px;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.wishContainer {
+    position: relative;
+    top: -90%;
+}
+
+.left .wishBox {
+    background: url(images/16174.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 520px;
+    width: 350px;
+    z-index: 999;
+    position: relative;
+    left: 60px;
+    border: 1px solid black;
+    border-radius: 16px;
+    box-shadow: 4px 2px 6px 4px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wishBox h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.wishBox h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+hr {
+    height: 1px;
+    background: rgb(9, 15, 66);
+    margin: 8px 20px;
+}
+
+.wishBox p {
+    font-size: 20px;
+    margin: 15px 10px 10px 10px;
+}
+
+.chatNumber {
+    text-align: center;
+    background-color: red;
+    padding: 2px;
+    font-size: 15px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 3px;
+    left: 195px;
+}
+
+.messageCheck {
+    font-size: 18px;
+    font-weight: bold;
+    width: fit-content;
+    margin: -10px 100px 8px 100px;
+    padding: 8px;
+    border-radius: 4px;
+    outline: none;
+    background: rgb(255, 168, 211);
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+.messageCheck:hover {
+    background: rgb(248, 106, 106);
+    font-size: 20px;
+}
+
+.messageCheck a {
+    text-decoration: none;
+    color: black;
+}
+
+.wishBox label {
+    text-align: center;
+    font-size: 14px;
+}
+
+.right {
+    position: relative;
+    right: -200px;
+    opacity: 0;
+}
+
+.right img {
+    position: relative;
+    top: 30px;
+    width: 500px;
+    height: 600px;
+}
+marquee {
+    font-size: 70px;
+    color: yellowgreen;
+    background: #111;
+}
+
+marquee p {
+    margin: 20px 0;
+}
+
+.section3 {
+    height: 100vh;
+    width: 100%;
+    background-color: lightgrey;
+    padding: 60px 100px;
+    position: relative;
+    top: 100px;
+}
+
+.cardContainer {
+    height: 100%;
+    width: 100%;
+    background: url(images/5574886.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.cardDetail {
+    text-align: center;
+}
+
+.cardDetail h1 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.cardDetail p {
+    font-size: 16px;
+    margin: -20px 0 15px 0;
+}
+
+.cardWrapper {
+    height: 78%;
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    background: rgb(102, 102, 248);
+    margin: 0px 20px;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 2px 4px 6px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.4s all;
+}
+
+.card img {
+    border-radius: 10px;
+    width: 240px;
+    height: 200px;
+}
+
+.card h1 {
+    text-align: center;
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.card p {
+    text-align: center;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.card:hover {
+    width: 320px;
+    height: 520px;
+    background: rgb(228, 127, 228);
+}
+
+.c1 {
+    position: relative;
+    left: -200px;
+}
+
+.c2 {
+    position: relative;
+    bottom: -200px;
+}
+
+.c3 {
+    position: relative;
+    right: -200px;
+}
+
+.section4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 100px 80px 100px;
+    background: url(images/5574886.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.gate1 {
+    width: 50%;
+    height: 100%;
+    background: url(images/gate1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.gate2 {
+    width: 50%;
+    height: 100%;
+    background: url(images/gate2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.mainForm {
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 3px 8px 8px 6px rgba(0, 0, 0, 0.4);
+}
+
+.leftForm,
+.rightForm {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+}
+
+.noteContainer,
+.commentContainer {
+    padding: 60px;
+    background: #333;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 8px 8px 4px rgba(0, 0, 0, 0.4);
+}
+.noteContainer {
+    padding: 20px;
+}
+
+.noteContainer h1 {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin: 15px 0 10px 0;
+}
+
+.noteContainer p {
+    margin: 22px;
+    font-size: 23px;
+    color: aqua;
+}
+
+.commentContainer {
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    background-color: aqua;
+    width: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #111;
+    border-radius: 14px;
+    width: 8px;
+}
+.commentContainer ::-webkit-scrollbar{
+    border-radius: 10px;
+}
+
+.commentContainer h2 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.commentContainer form {
+    width: 100%;
+    height: 250px;
+}
+
+.commentContainer label {
+    font-size: 20px;
+    color: white;
+    margin: 25px;
+    font-weight: bold;
+}
+
+.commentContainer input {
+    width: 320px;
+    height: 40px;
+    margin: 5px 25px;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+}
+
+.commentContainer button {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+    left: 140px;
+    margin: 20px 0 20px 0;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-weight: bold;
+}
+
+.commentContainer button:hover {
+    background: darkblue;
+    color: white;
+}
+
+.commentContainer h3 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    color: wheat;
+}
+
+.user {
+    margin: 25px 0 0 0;
+}
+.commentList {
+    padding: 15px;
+    margin: 20px;
+    color: white;
+}
+.commentList .commentName {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.commentList p {
+    margin: 5px 0 10px 0;
+    font-size: 20px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    z-index: 1000;
+    width: 450px;
+    height: 500px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.popupcontent h2 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.popupcontent p {
+    font-size: 24px;
+    margin: 20px;
+}
+
+.popupcontent button {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    background: aqua;
+    transition: all 0.4s;
+    cursor: pointer;
+    position: relative;
+    left: 140px;
+    font-weight: bold;
+}
+
+.popupcontent button:hover {
+    font-weight: bold;
+    background: green;
+    font-size: 14px;
+}
+
+.section5 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 100px 40px 100px;
+    background-color: #333;
+    filter: blur(5px);
+    position: relative;
+    top: 100px;
+}
+
+.contactForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 4px 2px 4px 2px rgba(0, 0, 0, 0.4);
+    background: url(images/5605216.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 40px;
+}
+
+.leftContactForm,
+.rightContactForm {
+    width: 50%;
+    height: 100%;
+}
+
+.leftContactForm {
+    background: white;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.leftContactForm img {
+    margin: 5px;
+    width: 580px;
+    height: 650px;
+}
+
+.rightContactForm {
+    padding: 30px;
+}
+
+.blurBackground {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    padding: 10px;
+}
+
+.mainBackground {
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.mainBackground h1 {
+    font-size: 50px;
+    margin: 20px 0 5px 0;
+    text-align: center;
+}
+
+.mainBackground p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.mainBackground label{
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 10px 40px;
+}
+.mainBackground input, 
+.mainBackground textarea {
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: lightgrey;
+    color: black;
+    width: 380px;
+    margin: 10px 40px;
+}
+.mainBackground textarea {
+    margin-top: -20px;
+}
+
+.mainBackground button {
+    font-weight: bolder;
+    padding: 10px;
+    font-size: 22px;
+    background: cyan;
+    border-radius: 10px;
+    margin: 20px 0 10px 0;
+    box-shadow: 3px 8px 8px 4px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.mainBackground button:hover {
+    font-weight: bold;
+    background: green;
+    font-size: 20px;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="home">
+        <section class="section1">
+            <div class="container">
+                <img src="images/boy & girl.png" alt="Gift">
+                <h1>Welcome Miss!</h1>
+                <h4>Scroll Down for More Fun</h4>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="container2">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="./about/index.html">About</a></li>
+                        <li><a href="#feedback">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="homeBox">
+                    <div class="left">
+                        <img src="images/bg.png" alt="">
+                        <div class="wishContainer">
+                            <div class="wishBox">
+                                <h2>Happy Birthday</h2>
+                                <h1><-Ashu-></h1>
+                                <hr>
+                                <p>Tadaaaa, Welcoming Miss with a best wishes! Imagine yourself as the female standing in right side HAHAA. Well, its your brithday today, HAPPIEST BIRTHDAY The RISE OF DEMON, check this website to see more , and look whats this "Message" button doing here</p>
+                                <hr>
+                                <div class="chatNumber">6</div>
+                                <button class="messageCheck" name="message"><a
+                                        href="#section4">Messages</a></button><label for="message">Alot
+                                    people wished you , check here</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="imgContainer">
+                            <img src="images/girl1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <marquee behavior="scroll" direction="right" scrollAmount="12">
+            <u>
+                <p>Happy Birthday Dear | Happy Birthday Dear | Happy Birthday Dear | Happy Birthday Dear | Happy
+                    Birthday
+                    Dear | Happy Birthday Dear | Happy Birthday Dear | Happy Birthday Dear | Happy Birthday Dear |
+                    Happy
+                    Birthday Dear | Happy Birthday Dear | Happy Birthday Dear |</p>
+            </u>
+        </marquee>
+
+
+        <section class="section3">
+            <div class="cardContainer">
+                <div class="cardDetail">
+                    <hr>
+                    <h1>Menu Cards</h1>
+                    <p>This section contains the major sub-parts of site</p>
+                    <hr>
+                </div>
+                <div class="cardWrapper">
+                    <div id="c1" class="card c1" onclick="moon()">
+                        <img src="images/boy.png" alt="card 1">
+                        <hr>
+                        <h1>The Moon</h1>
+                        <hr>
+                        <p>Pretty new concept compare to previous. With just a comparison of different moons at one
+                            place sounds foolish why it is here on birthday themed site , well try to see it</p>
+                        <hr>
+                    </div>
+                    <div id="c2" class="card c2" onclick="cake()">
+                        <img src="images/boy.png" alt="card 2">
+                        <hr>
+                        <h1>Birthday Cake</h1>
+                        <hr>
+                        <p>As usually, a birthday without cake feels incomplete....birthday without cake looks like a
+                            charger without phone useless!</p>
+                        <hr>
+                    </div>
+                    <div id="c3" class="card c3" onclick="carousel()">
+                        <img src="images/boy.png" alt="card 3">
+                        <hr>
+                        <h1>The Carousal</h1>
+                        <hr>
+                        <p>Yes, an another Carousel which holds the so called Birthday Person cute pics puff, just have
+                            a glance at yourself haha</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section4" class="section4">
+            <div class="gate1"></div>
+            <div class="gate2"></div>
+            <div class="mainForm">
+                <div class="leftForm">
+                    <div class="noteContainer">
+                        <h1>My Message !</h1>
+                        <hr>
+                        <p>Yes, It's 17th of October, and this your 3rd birthday with me, time flew so fast, feels like
+                            "arey kal hi toh first time baat hua tha". But its been a long time,Look here I am
+                            celebrating My Teachers 3rd birthday haha! Being far i cant do anything except this. So,
+                            Happy birthday to you Cute miss may on this birthday night your demon power gets more
+                            stronger haha! Jokes Apart. WISH YOU REALLY VERY HAPPY BIRTHDAY.Accept this Website and this
+                            only going to be my Return gift! <br>*whisper* discover the hidden elements in here & dont
+                            forgot to reply these strangers(including me)! Enjoy your day!</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="rightForm">
+                    <div class="commentContainer">
+                        <h2>Write your comment heres!</h2>
+                        <hr>
+                        <form action="/insert" method="POST">
+                            <label for="name">Usernam:-</label>
+                            <input type="text" name="name" placeholder="Enter Name"><br>
+                            <label for="comment">Message:-</label>
+                            <input type="text" name="comment" placeholder="Write Your comment"><br>
+                            <button type="submit">Submit</button>
+                            <hr>
+                        </form>
+                        <h3>Wishes received :-</h2>
+                            <div id="user-list" class="user"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup" id="popup">
+                <div class="popupcontent">
+                    <h2>What this is ?</h2>
+                    <hr>
+                    <p>This is wishBox where stranger or friends giving you the best wishes , they
+                        are anonymous. <br> They dont know you and i also dont know them.<br>You can reply them by
+                        typing, It will be visible to them same as it is to you! Everybody can see it! But make sure you
+                        connected to an Internet!</p>
+                    <hr>
+                    <button onclick="closePopup()">Okay!</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section5" id="feedback">
+            <div class="contactForm">
+                <div class="leftContactForm">
+                    <img src="images/13818774_5366842.jpg" alt="feedback">
+                </div>
+                <div class="rightContactForm">
+                    <div class="blurBackground">
+                        <div class="mainBackground">
+                            <h1>FeedBack Box</h1>
+                            <p>Write your reviews on this project</p>
+                            <hr>
+                            <form action="/send-email" method="post">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Username"><br>
+                                <label for="email">Email:</label>
+                                <input type="email" name="email" id="email" placeholder="Email" required> <br>
+                                <label for="message">Message:</label><br>
+                                <textarea id="message" name="message" rows="4" cols="50" required
+                                    placeholder="Write your feedback here--"></textarea><br>
+                                <button type="submit">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</body>
+
+</html>

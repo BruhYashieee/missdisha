@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #333;
+    user-select: none;
+    padding: 80px;
+}
+
+.container {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 4px 8px 2px 4px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left, .right {
+    width: 50%;
+    height: 100%;
+}
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.right {
+    background: url(../images/5574886.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+p {
+    position: relative;
+    top: -100px;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 30%;
+    left: -10%;
+    
+}
+label {
+    margin: 0px 50px 10px 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+select {
+    width: 200px;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+option {
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
