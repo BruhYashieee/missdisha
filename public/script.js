@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     gsap.to(".container img", {
         opacity: 1,
-        y: 100,
+        y: 80,
         duration: 3,
     });
 

@@ -30,7 +30,7 @@ body {
 }
 
 .section1 .container {
-    height: 500px;
+    height: 400px;
     width: 400px;
     background: url(images/5605216.jpg) no-repeat;
     background-position: center;
@@ -38,28 +38,28 @@ body {
     border-radius: 12px;
     box-shadow: 4px 2px 4px 4px rgba(0, 0, 0, 0.4);
     position: relative;
-    top: -100px;
+    top: -80px;
 }
 
 .section1 img {
     opacity: 0;
     margin-bottom: 40px;
     position: relative;
-    top: -100px;
+    top: -80px;
     width: 400px;
-    height: 500px;
+    height: 400px;
 }
 
 .container h1 {
     text-align: center;
-    margin: 10px 0 100px 0;
+    margin: -10px 0 100px 0;
     font-size: 50px;
 }
 
 .container h4 {
     text-align: center;
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 18px;
+    margin-top: -80px;
     animation: flicker 1s linear infinite;
 }
 
@@ -165,7 +165,7 @@ nav a:hover {
     background: url(images/16174.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    height: 520px;
+    height: 380px;
     width: 350px;
     z-index: 999;
     position: relative;
@@ -179,13 +179,13 @@ nav a:hover {
 }
 
 .wishBox h2 {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     margin: 10px 0;
 }
 
 .wishBox h1 {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     margin: 10px 0;
 }
@@ -197,7 +197,7 @@ hr {
 }
 
 .wishBox p {
-    font-size: 20px;
+    font-size: 16px;
     margin: 15px 10px 10px 10px;
 }
 
@@ -212,15 +212,15 @@ hr {
     color: white;
     font-weight: bold;
     position: relative;
-    top: 3px;
-    left: 195px;
+    top: -5px;
+    left: 185px;
 }
 
 .messageCheck {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     width: fit-content;
-    margin: -10px 100px 8px 100px;
+    margin: -18px 100px 8px 100px;
     padding: 8px;
     border-radius: 4px;
     outline: none;
@@ -253,11 +253,11 @@ hr {
 .right img {
     position: relative;
     top: 30px;
-    width: 500px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
 }
 marquee {
-    font-size: 70px;
+    font-size: 60px;
     color: yellowgreen;
     background: #111;
 }
@@ -270,7 +270,7 @@ marquee p {
     height: 100vh;
     width: 100%;
     background-color: lightgrey;
-    padding: 60px 100px;
+    padding: 40px 60px;
     position: relative;
     top: 100px;
 }
@@ -291,17 +291,17 @@ marquee p {
 }
 
 .cardDetail h1 {
-    font-size: 40px;
-    margin: 20px 0;
+    font-size: 30px;
+    margin: 10px 0;
 }
 
 .cardDetail p {
     font-size: 16px;
-    margin: -20px 0 15px 0;
+    margin: -10px 0 15px 0;
 }
 
 .cardWrapper {
-    height: 78%;
+    height: 85%;
     width: 100%;
     margin: 20px 0;
     display: flex;
@@ -312,9 +312,9 @@ marquee p {
 
 .card {
     width: 300px;
-    height: 500px;
+    height: 390px;
     background: rgb(102, 102, 248);
-    margin: 0px 20px;
+    margin: -30px 20px 20px 20px;
     border-radius: 15px;
     padding: 30px;
     box-shadow: 2px 4px 6px 8px rgba(0, 0, 0, 0.2);
@@ -325,8 +325,9 @@ marquee p {
 
 .card img {
     border-radius: 10px;
-    width: 240px;
-    height: 200px;
+    margin: 0 35px;
+    width: 180px;
+    height: 100px;
 }
 
 .card h1 {
@@ -343,7 +344,7 @@ marquee p {
 
 .card:hover {
     width: 320px;
-    height: 520px;
+    height: 400px;
     background: rgb(228, 127, 228);
 }
 
@@ -368,7 +369,7 @@ marquee p {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 80px 100px 80px 100px;
+    padding: 40px 60px;
     background: url(images/5574886.jpg) no-repeat;
     background-position: center;
     background-size: cover;
@@ -420,7 +421,7 @@ marquee p {
 
 .noteContainer,
 .commentContainer {
-    padding: 60px;
+    padding: 30px;
     background: #333;
     width: 100%;
     height: 100%;
@@ -428,11 +429,11 @@ marquee p {
     box-shadow: 3px 8px 8px 4px rgba(0, 0, 0, 0.4);
 }
 .noteContainer {
-    padding: 20px;
+    padding: 15px;
 }
 
 .noteContainer h1 {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     color: white;
     margin: 15px 0 10px 0;
@@ -440,7 +441,7 @@ marquee p {
 
 .noteContainer p {
     margin: 22px;
-    font-size: 23px;
+    font-size: 20px;
     color: aqua;
 }
 
@@ -451,8 +452,13 @@ marquee p {
     background-color: aqua;
     width: 12px;
 }
+::-webkit-scrollbar-button {
+    display:block;
+    background-color: black;
+    border-radius: 1px;
+}
 ::-webkit-scrollbar-thumb {
-    background-color: #111;
+    background-color: brown;
     border-radius: 14px;
     width: 8px;
 }
@@ -472,7 +478,7 @@ marquee p {
 }
 
 .commentContainer label {
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     margin: 25px;
     font-weight: bold;
@@ -480,7 +486,7 @@ marquee p {
 
 .commentContainer input {
     width: 320px;
-    height: 40px;
+    height: 30px;
     margin: 5px 25px;
     border-radius: 8px;
     padding: 10px;
@@ -489,11 +495,11 @@ marquee p {
 }
 
 .commentContainer button {
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px;
     border-radius: 8px;
     position: relative;
-    left: 140px;
+    left: 40px;
     margin: 20px 0 20px 0;
     cursor: pointer;
     transition: all 0.4s;
@@ -506,18 +512,19 @@ marquee p {
 }
 
 .commentContainer h3 {
-    font-size: 25px;
+    font-size: 22px;
+    margin-top: -20px;
     font-weight: bold;
     text-align: left;
     color: wheat;
 }
 
 .user {
-    margin: 25px 0 0 0;
+    margin: 10px 0 0 0;
 }
 .commentList {
     padding: 15px;
-    margin: 20px;
+    margin: 10px;
     color: white;
 }
 .commentList .commentName {
@@ -542,20 +549,20 @@ marquee p {
     padding: 20px;
     border: 2px solid black;
     z-index: 1000;
-    width: 450px;
-    height: 500px;
+    width: 400px;
+    height: 450px;
     padding: 40px;
     border-radius: 20px;
 }
 
 .popupcontent h2 {
     text-align: center;
-    font-size: 45px;
-    margin-bottom: 20px;
+    font-size: 35px;
+    margin-bottom: 10px;
 }
 
 .popupcontent p {
-    font-size: 24px;
+    font-size: 20px;
     margin: 20px;
 }
 
@@ -567,7 +574,7 @@ marquee p {
     transition: all 0.4s;
     cursor: pointer;
     position: relative;
-    left: 140px;
+    left: 120px;
     font-weight: bold;
 }
 
@@ -583,7 +590,7 @@ marquee p {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 80px 100px 40px 100px;
+    padding: 40px 100px 20px 100px;
     background-color: #333;
     filter: blur(5px);
     position: relative;
@@ -602,7 +609,7 @@ marquee p {
     background-position: center;
     background-size: cover;
     text-align: center;
-    padding: 40px;
+    padding: 30px;
 }
 
 .leftContactForm,
@@ -620,7 +627,7 @@ marquee p {
 .leftContactForm img {
     margin: 5px;
     width: 580px;
-    height: 650px;
+    height: 550px;
 }
 
 .rightContactForm {
@@ -642,24 +649,24 @@ marquee p {
 }
 
 .mainBackground h1 {
-    font-size: 50px;
-    margin: 20px 0 5px 0;
+    font-size: 40px;
+    margin: -20px 0 5px 0;
     text-align: center;
 }
 
 .mainBackground p {
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
 }
 
 .mainBackground label{
-    font-size: 26px;
+    font-size: 22px;
     font-weight: bold;
     color: black;
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin: 10px 40px;
+    margin: 2px 40px;
 }
 .mainBackground input, 
 .mainBackground textarea {
@@ -680,7 +687,7 @@ marquee p {
 .mainBackground button {
     font-weight: bolder;
     padding: 10px;
-    font-size: 22px;
+    font-size: 16px;
     background: cyan;
     border-radius: 10px;
     margin: 20px 0 10px 0;

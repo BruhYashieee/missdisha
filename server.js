@@ -36,10 +36,10 @@ app.post('/insert', async (req, res) => {
             name: req.body.name,
             comment: req.body.comment
         });
-        res.send(alert("Message been sent successFully!"));
+        res.send("Message been sent successFully!");
     } catch (error) {
         console.error('Error inserting data:', error);
-        res.status(500).send(alert("Failed to sent"));
+        res.status(500).send("Failed to sent");
     }
 });
 
